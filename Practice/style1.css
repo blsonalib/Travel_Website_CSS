@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    border: 4px solid black;
+}
+.box1{
+    float: left;
+    width: 49%;
+    
+     padding: 10px;
+     background-color: #ccc;
+
+}
+.box2{
+    float: right;
+    width: 49%;
+   
+    padding: 10px;
+    background-color: #ccc;
+}
+.container::after{
+content: "";
+display: block;
+clear: both;
+}
+/* @media (max-width:230px){
+    .box1, .box2{
+        float: none;
+    }
+} */
+@media print {
+ body{
+     color: green;
+ }
+}
